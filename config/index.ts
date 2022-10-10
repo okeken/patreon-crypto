@@ -1,7 +1,7 @@
 import patreonAbi from "./patreonAbi.json";
 
 export const contractConfig = {
-  addressOrName: "0x1f0CAb615Fe74Fe91e11A4F95458a6dB40D2ee40",
+  addressOrName: "0x06D236666467aEd420560F208Bb37a0e7aaD61B0",
   contractInterface: patreonAbi,
 };
 
