@@ -14,19 +14,14 @@ interface ContractRead {
 
 
 const useContractWrite = ({functionName='', args, value='0' }:ContractRead)=>{
-
+         
     const { config } = usePrepareContractWrite({
         ...contractConfig,
         functionName,
         args,
-        onSuccess(data) {
-            console.log('Success', data)
-          },
-        onError(error) {
-            console.log('Error', error)
-          },
+     
         overrides: {
-            gasLimit: 50000,
+          
             value: ethers.utils.parseEther(value as string ?? '0'),
           },
     })
